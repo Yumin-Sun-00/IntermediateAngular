@@ -1,0 +1,5 @@
+<button (click)="onToggleDisplay()">Display Details</button>
+<p *ngIf="showSecret">Secret Password = tuna</p>
+<div *ngFor="let toggle of toggles"
+[ngStyle]="{backgroundColor: toggle>= 5 ? 'blue' : 'transparent'}"
+[ngClass]="{'white-text': toggle >=5}">{{toggle}}</div>
